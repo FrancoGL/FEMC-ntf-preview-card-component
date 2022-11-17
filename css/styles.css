@@ -2,6 +2,7 @@
     /* Primary */
     --soft-blue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
+    --cyan-opacity: hsla(178, 100%, 50%, 0.5);
     /* Neutral */
     --main-bg: hsl(217, 54%, 11%); /* Very dark blue */
     --card-bg: hsl(216, 50%, 16%); /* Very dark blue */
@@ -53,6 +54,11 @@ main {
     font-weight: 600;
 }
 
+.text__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .text__paragraph {
     line-height: 1.5;
     font-size: 1.1rem;
@@ -90,6 +96,7 @@ main {
 
 .text--alter {
     color: var(--white);
+    text-decoration: none;
 }
 
 .footer__img {
@@ -120,3 +127,37 @@ main {
     }
 }
 
+@media screen and (min-width: 1024px) {
+
+    .card__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .card__header .header__icon {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: var(--cyan-opacity);
+    }
+
+    .header__icon img {
+        display: block;
+    }
+
+    .card__header:hover .header__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .text__title:hover, .text--alter:hover {
+        color: var(--cyan);
+        cursor: pointer;
+    }
+}
