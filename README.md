@@ -19,8 +19,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Live Site with Vercel]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-i9wdp7v9x1)
+- Live Site URL: [Live Site with Vercel](https://francogl.github.io/FEMC-ntf-preview-card-component)
 
 ## Built with
 
